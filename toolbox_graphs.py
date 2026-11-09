@@ -655,7 +655,7 @@ def g_rolle() -> None:
                 fig.add_trace(go.Scatter(x=[c - 0.28, c + 0.28], y=[fc, fc], mode="lines",
                                          name="tangente horizontale",
                                          line=dict(color=ORANGE, width=2.4),
-                                         showlegend=(c > 0)))
+                                         showlegend=bool(c > 0)))
                 fig.add_trace(go.Scatter(x=[c], y=[fc], mode="markers",
                                          marker=dict(color=VERT, size=11),
                                          showlegend=False))
